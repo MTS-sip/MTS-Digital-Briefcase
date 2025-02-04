@@ -1,14 +1,13 @@
 import Project from './Project';
 import PropTypes from 'prop-types';
 
-
 const Navigation = ({ section }) => {
   return (
     <section className="p-6">
       {section === "about" && (
         <div>
           <h1 className="text-3xl font-bold mb-4">About Me</h1>
-          <p className="text-lg">Software developer and code .</p>
+          <p className="text-lg">Software developer and code.</p>
         </div>
       )}
       {section === "portfolio" && (
@@ -25,20 +24,13 @@ const Navigation = ({ section }) => {
       {section === "contact" && (
         <div>
           <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
-          <p className="text-lg">I can be reached @ <a href="mailto: project three." link="#"></a></p>
-        
-        </div>
-      )}
-      {section === "contact" && (
-        <div>
-          <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
-          <p className="text-lg">I can be reached @ <a href="mailto:example@example.com" className="text-blue-500">example@example.com</a></p>
+          <p className="text-lg">I can be reached at <a href="mailto:example@example.com" className="text-blue-500">example@example.com</a></p>
         </div>
       )}
       {section === "resume" && (
         <div>
           <h1 className="text-3xl font-bold mb-4">Resume</h1>
-          <p className="text-lg"> Resume link <a href="/resume.pdf" className="text-blue-500 underline">here</a>.</p>
+          <p className="text-lg">Resume link <a href="/resume.pdf" className="text-blue-500 underline">here</a>.</p>
         </div>
       )}
     </section>
